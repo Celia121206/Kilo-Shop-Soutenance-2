@@ -23,6 +23,10 @@ footer {
     gap: 5%;
     font-size: 48px;
  }
+ .mascotte img {
+    width: 50px;
+
+}
 
  .fa-facebook-f, .fa-tiktok {
     font-size: 43px;
@@ -108,13 +112,6 @@ button:hover {
  
 .footer-links ul li:hover {
     color: #ccc;
-}
-
-.beige-box {
-    width: 220px;
-    height: 280px;
-    background-color: #f0efdb;
-    margin-left: 40px;
 }
 
 .bottom-line {
