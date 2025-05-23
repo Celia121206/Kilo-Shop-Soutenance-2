@@ -5,6 +5,18 @@ body {
     padding: 0;
 }
 
+background-color: #fffdef;
+font-family: 'Arial Rounded MT Bold',
+sans-serif;
+margin: 0;
+padding: 0;
+}
+
+#intro-slide {
+    height: 100vh;
+    background-color: #000;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,7 +28,7 @@ body {
 }
 
 .logo {
-    color: #AF4C2D;
+    color: #f35c41;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -25,6 +37,68 @@ body {
     display: flex;
     gap: 2rem;
     margin-left: auto;
+}
+
+.navbar-center a {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 150px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: #AF4C2D;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-center a:hover {
+    background-color: #f35c41;
+    color: #141410 !important;
+    transform: translateY(-2px);
+}
+
+.fa-globe {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 150px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.fa-globe:hover {
+    background-color: #f35c41;
+    color: #141410;
+    transform: translateY(-2px);
+}
+
+#concept {
+    margin: 90px;
+    padding: 80px 100px;
+    background-color: #141410;
+    color: #EEEEDD;
+    border-radius: 8px;
+}
+
+#concept p {
+    margin-top: 24px;
+}
+
+#concept h2,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: 20px;
 }
 
 .navbar-center a {
@@ -257,21 +331,48 @@ footer {
     font-size: 43px;
 }
 
-.content {
+h4,
+H5,
+h6 {
+    margin: 90px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.cards-container {
+    background-color: #141410;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-.left-section h1 {
-    font-size: 80px;
-    margin: 0;
+.card {
+    background-color: #c8c8c8;
+    border-radius: 15px;
+    width: 22%;
+    height: 500px;
 }
 
-.left-section p {
-    margin-top: 20px;
-    font-size: 25px;
-    line-height: 1.5;
+.card:nth-child(1),
+.card:nth-child(3) {
+    transform: translateY(-150px);
+}
+
+
+.slides,
+.fade {
+    display: none;
 }
 
 .block {
@@ -390,4 +491,273 @@ button:hover {
 .navbar-center a:hover {
     background-color: #AF4C2D;
     transform: translateY(-2px);
+}
+
+
+
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.3s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.col {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 30%;
+    border-left: 1px solid black;
+    padding: 15px;
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.col-1 {
+    border-left: none;
+}
+
+.col-2 {
+    margin-top: 15vh;
+}
+
+.col-3 {
+    margin-top: 30vh;
+}
+
+.pesez {
+    text-align: center;
+
+}
+
+.emportez {
+    text-align: center;
+}
+
+.steps p {
+    font-size: 65px;
+
+}
+
+
+.col img {
+    max-height: 500px;
+    margin: 15px 0px;
+}
+
+footer {
+    background-color: #141410;
+    color: #f0efdb;
+    margin-top: auto;
+}
+
+.newsletter {
+    padding: 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    font-size: 48px;
+}
+
+.mascotte-footer {
+    height: 30vw;
+}
+
+.fa-facebook-f,
+.fa-tiktok {
+    font-size: 43px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section h1 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.left-section p {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.block {
+    display: flex;
+    gap: 100px;
+}
+
+.mascotte-1 {
+    height: 25vw;
+    background-color: #EEEEDD;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+    animation: balance 3s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+input[type="email"] {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    width: 450px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #f0efdb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #5c5f4a;
+}
+
+button:hover {
+    background-color: #e8e7d4;
+}
+
+.separator {
+    margin: 30px 0px 7px 10;
+    border: 0.5px solid #ccc;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 150px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-left: 90px;
+    line-height: 3;
+}
+
+.footer-links ul li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li:hover {
+    color: #ccc;
+}
+
+.bottom-line {
+    border: 0.5px solid #ccc;
+    margin-top: -50px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
 }
