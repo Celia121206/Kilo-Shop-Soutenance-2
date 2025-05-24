@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kilo Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
-
 <body>
+    
     <header class="navbar">
         <div class="navbar-left">
             <span class="logo">KILO SHOP</span>
@@ -26,22 +27,94 @@
 
     <main>
         <section id="concept">
+            <div class="block">
+                <div class="texte-block">
             <h2>Notre concept</h2>
             <h3>Achetez au kilo pas à la pièce !</h3>
-            <p>Chez Kilo Shop, on fait les choses autrement. Ici, les vêtements 
-                de seconde main se vendent au kilo pas à la pièce.
-                C'est simple : vous choisissez ce que vous aimez, on pèse, et hop, 
+            <p>Chez Kilo Shop, on fait les choses autrement. Ici, les vêtements <br> 
+                de seconde main se vendent au kilo pas à la pièce. <br>
+                C'est simple : vous choisissez ce que vous aimez, on pèse, et hop, <br> 
                 c'est le poids qui fait le prix.</p>
+                </div>
+            <img class="mascotte-1" src="images/Frame 83.png" alt="mascotte-1">
+             </div>
+        </section>
+
+        <section id="fonctionnement">
+            <h4>COMMENT CA MARCHE ?</h4>
+            <section class="steps">
+                <article class="col col-1">
+                  <h2>Étape 1</h2>
+                  <div>
+                    <img
+                      src="images/choisissez.png"
+                      alt="Étape 1"
+                    />
+                    <p>CHOISISSEZ</p>
+                  </div>
+                </article>
+                <article class="col col-2">
+                  <h2>Étape 2</h2>
+                  <div>
+                    <img
+                      src="images/pesez.png"
+                      alt="Étape 2"
+                    />
+                    <p class="pesez"> PESEZ</p>
+                  </div>
+                </article>
+          
+                <article class="col col-3">
+                  <h2>Étape 3</h2>
+                  <div>
+                    <img
+                      src="images/emportez.png"
+                      alt="Étape 3"
+                    />
+                    <p class="emportez">EMPORTEZ</p>
+                  </div>
+                </article>
+              </section>
+    </section id="pastille">
+        <h5>C'EST QUOI LE PRIX AU KILO ?</h5>
+        <div class="cards-container">
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+            <div class="card">
+            </div>
+        </div>
+    </section>
+
+    <section id="vêtements">
+        <h6>MAIS D'OU VIENNENT NOS VETEMENTS</h6>
+        <div class="slideshow-container">
+            <div class="slides fade">
+              <img src="images/11 Amazing Vintage IKEA Pieces We Wish They Would Bring Back.jpg" />
+            </div>
+      
+            <div class="slides fade">
+              <img src="images/11 Amazing Vintage IKEA Pieces We Wish They Would Bring Back.jpg" />
+            </div>
+
+            <div class="slides fade">
+              <img src="images/11 Amazing Vintage IKEA Pieces We Wish They Would Bring Back.jpg" />
+            </div>
+
+            <a class="prev" id="prev">❮</a>
+            <a class="next" id="next">❯</a>
+          </div>
+          <br />
+      
+
+
+    </section>
+
         </section>
     </main>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Page avec Footer</title>
-    
-</head>
-<body>
     <footer>
         <section class="newsletter">
             <div class="content">
@@ -75,8 +148,7 @@
                         <li>Devenir Franchisé</li>
                     </ul>
                 </div>
-                <div class="mascotte"></div>
-                <img src="images/mascotte fin.png" alt="mascotte">
+                <img class="mascotte-footer" src="images/mascotte fin.png" alt="mascotte">
             </div>
             <hr class="bottom-line">
             <div class="copyright">
