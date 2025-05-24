@@ -271,10 +271,14 @@ body {
    gap: 100px;
    }
    .mascotte-1 {
-   height: 30vw;
+   height: 25vw;
    background-color: #EEEEDD;
    border-radius: 8px;
+   display: flex;
    align-items: center;
+   justify-content: center;
+   padding: 40px;
+   box-sizing: border-box;
    }
    .right-section {
    display: flex;
