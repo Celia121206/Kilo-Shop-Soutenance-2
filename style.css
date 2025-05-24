@@ -4,8 +4,12 @@ body {
    margin: 0;
    padding: 0;
    }
+   #intro-slide {
+    height: 100vh; 
+    background-color: #000;
+  }
 
-   .navbar {
+  .navbar {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -64,6 +68,10 @@ body {
    color: #EEEEDD;
    border-radius: 8px;
    }
+   #concept p {
+    margin-top: 24px; 
+    }
+    
    #concept h2, h4, h5, h6 {
    text-transform: uppercase;
    font-size: 80px;
@@ -72,10 +80,6 @@ body {
 
    h4, H5, h6 {
     margin: 90px;
-   }
- 
-   #concept p {
-   margin-top: 24px; 
    }
 
    .steps {
