@@ -7,7 +7,7 @@ body {
 
 #intro-slide {
   height: 100vh;
-  background-color: #000;
+  background-color: #141410;
 }
 
 .navbar {
@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-  color: #f35c41;
+  color: #AF4C2D;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -48,7 +48,6 @@ body {
 .navbar-center a:hover {
   background-color: #AF4C2D;
   color: #141410 !important;
-  transform: translateY(-2px);
 }
 
 .fa-globe {
@@ -62,9 +61,8 @@ body {
 }
 
 .fa-globe:hover {
-  background-color: #f35c41;
+  background-color: #AF4C2D;
   color: #141410;
-  transform: translateY(-2px);
 }
 
 #concept {
@@ -104,14 +102,14 @@ h6 {
 }
 
 .cards-container {
-  background-color: #141410;
+  background-color:#141410;
   padding: 100px;
   display: flex;
   justify-content: space-between;
 }
 
 .card {
-  background-color: #D9D9D9;
+  background-color:#D9D9D9;
   border-radius: 15px;
   width: 22%;
   height: 500px;
@@ -140,6 +138,7 @@ h6 {
   from {
       opacity: 0.4;
   }
+
   to {
       opacity: 1;
   }
@@ -164,7 +163,6 @@ h6 {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .next {
@@ -174,7 +172,7 @@ h6 {
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(42, 40, 40, 0.8);
 }
 
 .col {
@@ -255,15 +253,19 @@ h6 {
   0% {
       transform: rotate(0deg);
   }
+
   25% {
       transform: rotate(-10deg);
   }
+
   50% {
       transform: rotate(10deg);
   }
+
   75% {
       transform: rotate(-5deg);
   }
+
   100% {
       transform: rotate(0deg);
   }
@@ -288,20 +290,20 @@ input[type="email"] {
 button {
   padding: 12px 20px;
   font-size: 16px;
-  background-color: #f0efdb;
+  background-color: #EEEEDD;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  color: #5c5f4a;
+  color: black;
 }
 
 button:hover {
-  background-color: #e8e7d4;
+  background-color: #AF4C2D
 }
 
 footer {
   background-color: #141410;
-  color: #f0efdb;
+  color: #EEEEDD;
   margin-top: auto;
 }
 
@@ -314,6 +316,7 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
+  color: #EEEEDD;
   gap: 5%;
   font-size: 48px;
 }
@@ -329,7 +332,7 @@ footer {
 
 .separator {
   margin: 30px 0px 7px 10;
-  border: 0.5px solid #ccc;
+  border: 0.5px solid white;
 }
 
 .footer-content {
@@ -347,7 +350,7 @@ footer {
 .footer-links ul {
   list-style: none;
   padding: 0;
-  font-size: 18px;
+  font-size: 24px;
   margin-left: 90px;
   line-height: 3;
 }
@@ -358,16 +361,16 @@ footer {
 }
 
 .footer-links ul li:hover {
-  color: #ccc;
+  text-decoration: underline;
 }
 
 .bottom-line {
-  border: 0.5px solid #ccc;
+  border: 0.5px solid white;
   margin-top: -50px;
 }
 
 .copyright {
   text-align: center;
   font-size: 14px;
-  color: #ccc;
+  color: #EEEEDD;
 }
