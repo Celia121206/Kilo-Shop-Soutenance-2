@@ -29,7 +29,7 @@ body {
    font-weight: bold;
    text-decoration: none;
      padding: 12px 16px;
-   border-radius: 8px;
+   border-radius: 150px;
    transition: all 0.3s ease;
    display: flex;
    align-items: center;
@@ -38,13 +38,24 @@ body {
 
    .navbar-center a:hover {
     background-color: #f35c41;
-    color: white;
+    color: #141410;
     transform: translateY(-2px);
  }
 
    .fa-globe {
    color: white;
+   display: flex;
+   align-items: center;
+   padding: 12px 16px;
+   border-radius: 150px;
+   transition: all 0.3s ease;
+   cursor: pointer;
    }
+   .fa-globe:hover {
+    background-color: #f35c41;
+    color: white;
+    transform: translateY(-2px);
+    }
 
    #concept {
    margin: 90px;
@@ -114,7 +125,6 @@ body {
   margin: auto; 
 }
 
-/* Flèches pour se déplacer dans le carousel */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -140,7 +150,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Texte descriptif */
+
 .text {
   color: white;
   font-size: 15px;
@@ -151,7 +161,7 @@ body {
   text-align: center;
 }
 
-/* Les points de suivi du carousel */
+
 .dot {
   cursor: pointer;
   height: 16px;
@@ -168,7 +178,7 @@ body {
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.3s;
