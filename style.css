@@ -75,7 +75,7 @@ body {
    }
  
    #concept p {
-   margin-top: 20px; 
+   margin-top: 24px; 
    }
 
    .steps {
@@ -289,7 +289,28 @@ body {
    justify-content: center;
    padding: 40px;
    box-sizing: border-box;
+
+   animation: balance 3s ease-in-out infinite;
+   transform-origin: bottom center;
    }
+
+   @keyframes balance {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
    .right-section {
    display: flex;
    flex-direction: column;
