@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kilo Shop-Concept</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
     <meta name="description"
         content="Kilo Shop propose des vêtements vintage vendus au poids. Un concept écoresponsable pour chiner des pièces uniques à petits prix.">
+</head>
 
 <body>
-    <section id="intro-slide">
+    <header class="background-container">
+        <div class="background-image" id="bg"></div>
+        <div class="overlay-black" id="overlay"></div>
+    </header>
+
+    <section class="hero">
         <img src="images/Capture d’écran 2025-05-24 à 14.46.14.png" class="gif-kiloshop" alt="gif kilo shop">
-    </section>
-    <header class="navbar">
+      </section>
+
+    <main class="main-content">
+      <div class="navbar">
         <div class="navbar-left">
             <span class="logo">KILO SHOP</span>
         </div>
@@ -27,11 +34,10 @@
             <a href="#">ACTUS</a>
             <a href="#">SHOPS</a>
             <a href="#">LOOKS</a>
-            <i class="fa-solid fa-globe"></i></a>
+            <i class="fa-solid fa-globe"></i>
         </nav>
-    </header>
-
-    <main>
+      </div>
+    </div>
         <section id="concept">
             <div class="block">
                 <div class="texte-block">
@@ -72,34 +78,40 @@
                     </div>
                 </article>
             </section>
-        </section id="pastille">
         </section>
 
-        </section>
-        </section id="pastille">
-        <h5>C'EST QUOI LE PRIX AU KILO ?</h5>
-        <div class="cards-container">
-            <div class="card">
+        <section id="pastille">
+            <h5>C'EST QUOI LE PRIX AU KILO ?</h5>
+            <div class="cards-container">
+                <div class="card">
+                  <img src="images/IMG_5964.JPG" alt="img1" class="img1" >
+                  <img src="images/IMG_5964.JPG" alt="img2" class="img2" >
+                  <img src="images/IMG_5964.JPG" alt="img3" class="img3">
+                  <img src="images/IMG_5964.JPG" alt="img4" class="img4">
+                </div>
             </div>
-            <div class="card">
-            </div>
-            <div class="card">
-            </div>
-            <div class="card">
-            </div>
-        </div>
         </section>
 
         <section id="vêtements">
             <h6>MAIS D'OÚ VIENNENT NOS VETEMENTS</h6>
             <div class="slideshow-container">
-
                 <a class="prev" id="prev">❮</a>
+                <div class="affiche-reduite">
+                <img src="images/IMG_5964.JPG" alt="affiche">
+                <img src="images/IMG_5964.JPG" alt="affiche">
+                <img src="images/IMG_5964.JPG" alt="affiche">
+                </div>
                 <a class="next" id="next">❯</a>
             </div>
-            <br />
+        </section>
 
+        <section class="marques">
+            <h6>ET SINON A PROPOS DES MARQUES ?</h6>
+            <div class="marques-logo">
+            </div>
+        </section>
     </main>
+
     <footer>
         <section class="newsletter">
             <div class="content">
@@ -141,7 +153,6 @@
             </div>
         </section>
     </footer>
-    </section>
+    <script src="script.js"></script>
 </body>
-
 </html>
