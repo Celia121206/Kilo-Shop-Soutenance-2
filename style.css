@@ -3,6 +3,11 @@
   src: url(fonts/Baloo2-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Fredoka;
+  src: url(fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
 body {
   background-color: #EEEEDD;
   margin: 0;
@@ -14,6 +19,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Baloo2;
 }
 
+p {
+  font-family: Fredoka;
+}
 .overlay-black {
   position: absolute;
   inset: 0;
@@ -72,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
+  font-family: Fredoka;
 }
 
 .navbar-center a:hover {
@@ -95,7 +104,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 #concept {
   margin: 90px;
   padding: 80px 100px;
@@ -114,17 +122,25 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-h3, h4, h5 {
+h4, h5, h2 {
   text-transform: uppercase;
   font-size: 80px;
   margin: 90px;
-  margin-bottom: 20px;
 }
 
-h6{
+h3 {
+  font-size: 48px;
+  margin: 0;
+  margin-top: 0;
+}
+
+h6 {
   font-size: 70px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 90px;
 }
-
 .steps {
   display: flex;
   justify-content: center;
