@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../Downloads/Baloo_2,Bodoni_Moda,Fredoka,Mea_Culpa,MonteCarlo,etc/Baloo_2"
+		},
+		{
+			"path": "../../../../../Downloads/Baloo_2,Bodoni_Moda,Fredoka,Mea_Culpa,MonteCarlo,etc/Fredoka"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Kilo-Shop-Soutenance-2"
+	}
+}

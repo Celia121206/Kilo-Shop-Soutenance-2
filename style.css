@@ -108,17 +108,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
 }
 
-#concept h2 {
+#concept h1 {
   text-transform: uppercase;
   font-size: 80px;
   margin-bottom: 20px;
 }
 
-h4, h5, h6 {
+h3, h4, h5 {
   text-transform: uppercase;
   font-size: 80px;
   margin: 90px;
   margin-bottom: 20px;
+}
+
+h6{
+  font-size: 70px;
 }
 
 .steps {
@@ -226,6 +230,7 @@ h4, h5, h6 {
 
 .pesez {
   text-align: center;
+  font-size: 10px;
 }
 
 .emportez {
