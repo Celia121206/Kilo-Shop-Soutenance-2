@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Baloo2;
+  src: url(fonts/Baloo2-VariableFont_wght.ttf);
+}
+
 body {
   background-color: #EEEEDD;
   margin: 0;
@@ -5,10 +10,10 @@ body {
   scroll-behavior: smooth;
 }
 
-@font-face {
+h1, h2, h3, h4, h5, h6 {
   font-family: Baloo2;
-  src: url(fonts/Baloo2-VariableFont_wght.ttf);
 }
+
 .overlay-black {
   position: absolute;
   inset: 0;
@@ -24,7 +29,6 @@ body {
   height: 130vh;
   z-index: 2;
 }
-
 
 .gif-kiloshop {
   position: fixed;
