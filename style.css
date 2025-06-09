@@ -32,20 +32,27 @@ p {
 
 .hero {
   background-color: #141410;
-  position: relative;
   height: 130vh;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
+  width: 800px;
+  height: auto;
+  position: relative;
+  top: -95px; 
 }
 
 .gif-kiloshop {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 800px;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  opacity: 1;
-  transition: opacity 0.5s ease;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    z-index: 1000;
+    transition: transform 0.2s ease-out;
 }
 
 .logo {
@@ -172,12 +179,12 @@ h6 {
   height: 400px;
 }
 
-
 .slideshow-container {
   max-width: 1400px;
   position: relative;
   margin: auto;
 }
+
 .affiche-reduite{
   display: flex;
   gap: 60px;
@@ -327,7 +334,6 @@ h6 {
 
 }
 
-
 .right-section {
   display: flex;
   flex-direction: column;
@@ -376,6 +382,15 @@ footer {
   color: #EEEEDD;
   gap: 5%;
   font-size: 48px;
+}
+
+.social-icons a {
+  color: #EEEEDD; 
+  text-decoration: none;
+}
+
+.social-icons a:visited {
+  color: #EEEEDD;
 }
 
 .mascotte-footer {
@@ -432,3 +447,4 @@ footer {
   color: #EEEEDD;
   margin-top: 20px;
 }
+

@@ -19,8 +19,6 @@ window.addEventListener('scroll', function () {
     }
 })
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll(".card img");
   
