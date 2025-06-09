@@ -25,7 +25,6 @@ p {
 .overlay-black {
   position: absolute;
   inset: 0;
-  background-color: black;
   opacity: 0;
   transition: opacity 0.5s ease;
   z-index: 1;
@@ -169,7 +168,7 @@ h6 {
 .img1:nth-child(1),
 .img3:nth-child(3) {
   transform: translateY(-150px);
-  margin-top: -70px;
+  margin-top: -80px;
   height: 400px;
 }
 
@@ -318,6 +317,15 @@ h6 {
   padding-bottom: 700px;
 }
 
+.card img {
+  opacity: 0;
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.card img.visible {
+  opacity: 1;
+
+}
 
 
 .right-section {
@@ -357,7 +365,7 @@ footer {
 }
 
 .newsletter {
-  padding: 15px;
+  padding: 40px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -422,4 +430,5 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #EEEEDD;
+  margin-top: 20px;
 }
