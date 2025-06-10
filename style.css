@@ -47,19 +47,19 @@ p {
 }
 
 .gif-kiloshop {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 150px;
-    z-index: 1000;
-    transition: transform 0.2s ease-out;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  z-index: 1000;
+  transition: transform 0.2s ease-out;
 }
 
 .logo {
-  color: #AF4C2D;
-  font-weight: bold;
-  font-size: 1.5rem;
+  height: 23px; /* Ajustez la hauteur selon vos besoins */
+  width: auto; /* La largeur s'adapte proportionnellement */
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -108,7 +108,6 @@ p {
   background-color: #AF4C2D;
   color: #141410;
 }
-
 
 #concept {
   margin: 90px;
@@ -166,7 +165,7 @@ h6 {
 
 .card {
   display: flex;
-  border-radius: 15px;
+  border-radius: 8px;
   width: 30%;
   height: 400px;
   gap: 50px;
@@ -191,6 +190,10 @@ h6 {
   width: auto;
   height: 500px;
   padding-left: 90px;
+}
+
+.affiche-reduite img {
+  border-radius: 8px;
 }
 
 .prev,
@@ -290,7 +293,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 30px;
   box-sizing: border-box;
   animation: balance 3s ease-in-out infinite;
   transform-origin: bottom center;
@@ -327,6 +330,7 @@ h6 {
 .card img {
   opacity: 0;
   transition: opacity 3s ease, transform 3s ease;
+  border-radius: 8px;
 }
 
 .card img.visible {
@@ -349,16 +353,21 @@ input[type="email"] {
   border-radius: 10px;
   border: none;
   width: 450px;
+  font-family: Baloo2;
 }
 
 button {
-  padding: 12px 20px;
-  font-size: 16px;
+  width: 120px;
+  height: 48px;
+  font-size: 20px;
   background-color: #EEEEDD;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   color: black;
+  font-family: Baloo2;
+  font-weight: 500;
+  padding: 0;
 }
 
 button:hover {
@@ -425,6 +434,7 @@ footer {
   font-size: 24px;
   margin-left: 90px;
   line-height: 3;
+  font-family: Baloo2;
 }
 
 .footer-links ul li {
