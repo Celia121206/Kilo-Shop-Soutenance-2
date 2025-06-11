@@ -56,8 +56,8 @@ p {
 }
 
 .logo {
-  height: 23px; /* Ajustez la hauteur selon vos besoins */
-  width: auto; /* La largeur s'adapte proportionnellement */
+  height: 23px; 
+  width: auto; 
 }
 
 .navbar {
@@ -398,8 +398,8 @@ footer {
   text-decoration: none;
 }
 
-.social-icons a:visited {
-  color: #EEEEDD;
+.social-icons :hover {
+  opacity: 90%;
 }
 
 .mascotte-footer {
@@ -458,3 +458,49 @@ footer {
   margin-top: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-langue-deroulant {
+  position: relative;
+  display: inline-block;
+}
+
+#bouton-langue {
+  color: white;
+  padding: 12px 16px;
+  border-radius: 150px;
+  cursor: pointer;
+}
+
+#bouton-langue:hover {
+  background-color: #AF4C2D;
+  color: #141410;
+}
+
+.liste-langues {
+  display: none;
+  position: absolute;
+  background-color: #EEEEDD;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  right: 0;
+  border-radius: 8px;
+}
+
+.liste-langues a {
+  color: #141410;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Fredoka;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.liste-langues a:hover {
+  background-color: #AF4C2D;
+  color: #EEEEDD;
+  border-radius: 8px;
+}
