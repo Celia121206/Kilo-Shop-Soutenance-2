@@ -397,8 +397,8 @@ footer {
   text-decoration: none;
 }
 
-.social-icons a:visited {
-  color: #EEEEDD;
+.social-icons :hover {
+  opacity: 90%;
 }
 
 .mascotte-footer {
