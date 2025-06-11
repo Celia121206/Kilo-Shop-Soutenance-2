@@ -56,8 +56,8 @@ p {
 }
 
 .logo {
-  height: 23px; /* Ajustez la hauteur selon vos besoins */
-  width: auto; /* La largeur s'adapte proportionnellement */
+  height: 23px; 
+  width: auto; 
 }
 
 .navbar {
@@ -189,7 +189,6 @@ h6 {
   gap: 60px;
   width: auto;
   height: 500px;
-  padding-left: 90px;
 }
 
 .affiche-reduite img {
@@ -268,8 +267,8 @@ h6 {
   align-items: flex-start;
 }
 
-.left-section h1 {
-  font-size: 80px;
+.left-section h6 {
+  font-size: 65px;
   margin-left: 90px;
   margin-top: 5px;
 }
@@ -458,3 +457,24 @@ footer {
   margin-top: 20px;
 }
 
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: calc(100% - 130px); 
+}
+
+.affiche-reduite {
+  display: flex;
+  gap: 60px;
+  width: 200%; 
+  height: 500px;
+  padding-left: 90px;
+  transition: transform 0.5s ease;
+}
+
+.affiche-reduite img {
+  width: calc((100% - 300px) / 6); 
+  flex-shrink: 0;
+}
