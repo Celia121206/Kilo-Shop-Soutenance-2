@@ -1,11 +1,11 @@
 @font-face {
   font-family: Baloo2;
-  src: url(fonts/Baloo2-VariableFont_wght.ttf);
+  src: url('fonts/Baloo2-VariableFont_wght.ttf');
 }
 
 @font-face {
   font-family: Fredoka;
-  src: url(fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+  src: url('fonts/Fredoka-VariableFont_wdth,wght.ttf');
 }
 
 body {
@@ -151,6 +151,7 @@ h6 {
   justify-content: center;
 }
 
+
 .steps p {
   font-size: 65px;
 }
@@ -255,10 +256,16 @@ h6 {
 .pesez {
   text-align: center;
   font-size: 10px;
+  margin-top: -50px;
 }
 
 .emportez {
   text-align: center;
+  margin-top: -50px;
+}
+
+.choisissez{
+  margin-top: -50px;
 }
 
 .content {
@@ -510,4 +517,41 @@ footer {
   100% {
     transform: translateX(-50%);
   }
+}
+
+.menu-langue-deroulant {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.liste-langues {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  min-width: 100px;
+  right: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.liste-langues a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+}
+
+.liste-langues a:hover {
+  background-color: #AF4C2D;
+  border-radius: 8px;
+}
+
+.menu-langue-deroulant:hover .liste-langues {
+  display: block;
 }
