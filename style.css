@@ -478,3 +478,36 @@ footer {
   width: calc((100% - 300px) / 6); 
   flex-shrink: 0;
 }
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+
+.marquee-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-content img {
+  height: 100px;
+  margin: 0 4rem;
+  filter: grayscale(100%) brightness(1.2);
+  transition: transform 0.3s ease;
+}
+
+.marquee-content img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

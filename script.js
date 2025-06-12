@@ -66,35 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCarousel();
     });
 });
-  const images = document.querySelectorAll(".card img");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, {
-    threshold: 0.7
-  });
-
-  images.forEach((img) => {
-    observer.observe(img);
-  });
-
-
-document.getElementById("bouton-langue").addEventListener("click", function () {
-  const menu = document.getElementById("liste-langues");
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
-});
-
-window.addEventListener("click", function (e) {
-  const bouton = document.getElementById("bouton-langue");
-  const menu = document.getElementById("liste-langues");
-
-  if (!bouton.contains(e.target) && !menu.contains(e.target)) {
-    menu.style.display = "none";
-  }
-});
 
 
