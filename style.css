@@ -496,6 +496,8 @@ footer {
 .marquee-content {
   display: flex;
   animation: scroll 30s linear infinite;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .marquee-content img {
