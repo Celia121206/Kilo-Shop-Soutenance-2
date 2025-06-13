@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: Fredoka;
+  font-family: fredoka;
 }
 .overlay-black {
   position: absolute;
@@ -154,6 +154,8 @@ h6 {
 
 .steps p {
   font-size: 65px;
+  display: flex;
+  justify-content: center;
 }
 
 .cards-container {
@@ -179,11 +181,7 @@ h6 {
   height: 400px;
 }
 
-.slideshow-container {
-  max-width: 1400px;
-  position: relative;
-  margin: auto;
-}
+
 
 .affiche-reduite{
   display: flex;
@@ -223,13 +221,12 @@ h6 {
 }
 
 .col {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   width: 30%;
   border-left: 1px solid black;
   padding: 15px;
-  padding-top: 85px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -557,3 +554,5 @@ footer {
 .menu-langue-deroulant:hover .liste-langues {
   display: block;
 }
+
+
