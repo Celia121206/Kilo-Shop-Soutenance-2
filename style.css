@@ -580,7 +580,6 @@ footer {
   }
   
   .block {
-    flex-direction: column;
     gap: 40px;
     align-items: center;
     text-align: center;
@@ -793,11 +792,13 @@ footer {
   .left-section h6 {
     font-size: 24px;
     margin: 15px 10px;
+    margin-left: -170px;
   }
   
   .left-section p {
     margin: 15px 10px;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: left;
   }
   
   .right-section {
@@ -814,8 +815,9 @@ footer {
   
   button {
     width: 100px;
-    height: 40px;
+    height: 48px;
     font-size: 16px;
+    margin-left: -100px;
   }
   
   .social-icons :not(.fa-tiktok, .fa-facebook-f){
@@ -830,8 +832,8 @@ footer {
   }
 
   .mascotte-footer {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 200px;
     margin-bottom: 50px;
   }
   
@@ -843,9 +845,9 @@ footer {
   }
   
   .footer-links {
-    flex-direction: column;
+    display: flex;
     gap: 20px;
-    text-align: center;
+    text-align: left;
   }
   
   .footer-links ul {
@@ -876,79 +878,42 @@ footer {
   }
 }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Pour mobile portrait (480px et moins) */
 @media screen and (max-width: 480px) {
-  .card img {
-    width: 150px;
-    height: 225px;
-  }
-  
-  .img1:nth-child(1),
-  .img3:nth-child(3) {
-    height: 225px;
-  }
-  
-  .mascotte-1 {
-    height: 150px;
-    width: 150px;
-  }
-  
-  .left-section h6 {
-    font-size: 20px;
-    margin: 10px 5px;
-  }
-  
-  .left-section p {
-    margin: 10px 5px;
-    font-size: 14px;
-  }
-  
-  .right-section {
-    margin: 0 5px;
-  }
-  
-  input[type="email"] {
-    width: 95%;
-    max-width: 250px;
-    font-size: 13px;
-    padding: 10px 15px;
-  }
-  
-  button {
-    width: 90px;
-    height: 36px;
-    font-size: 14px;
-  }
-  
-  .social-icons {
-    font-size: 24px;
-  }
-  
-  .mascotte-footer {
-    height: 120px;
-    width: 120px;
-  }
-  
-  .footer-links ul {
-    font-size: 14px;
-    line-height: 2;
-  }
-  
-  .affiche-reduite {
-    padding-left: 5px;
-    height: 150px;
-    gap: 10px;
-  }
-  
-  .marquee-content img {
-    height: 30px;
-    margin: 0 0.8rem;
-  }
-  
-  .copyright {
-    font-size: 11px;
-    padding: 15px 5px;
-  }
+
   .block {
     flex-direction: column;
     gap: 20px;
@@ -1007,15 +972,11 @@ footer {
     font-size: 13px;
     line-height: 1.3;
   }
-  
+
   h4, h5, h2 {
-    font-size: 24px;
-    margin: 10px 5px;
-  }
-  
-  h6 {
-    font-size: 20px;
-    margin: 10px 5px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
   }
   
   .steps {
@@ -1042,6 +1003,66 @@ footer {
   
   .choisissez, .pesez, .emportez {
     font-size: 18px;
+  }
+
+ .card{
+  margin-top: -130px;
+  margin-bottom: -150px;
+ }
+
+
+  .marquee-content img {
+    height: 50px;
+    margin: 0 0.8rem;
+  }
+  h2{
+    margin-top: 100px;
+  }
+  
+  .left-section h6 {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .left-section p {
+    margin: 10px 5px;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  
+  button {
+    width: 90px;
+    height: 48px;
+    font-size: 12px;
+  }
+  input{
+    margin-left: 30px;
+  }
+  
+  .social-icons {
+    font-size: 48px;
+  }
+
+  .mascotte-footer {
+    height: 200px;
+    width: 150px;
+  }
+  
+  .footer-links ul {
+    font-size: 17px;
+    line-height: 2;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .copyright {
+    font-size: 12px;
+    margin-top: -20px;
+
   }
 }
 
