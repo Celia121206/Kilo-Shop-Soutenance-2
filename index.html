@@ -2,204 +2,227 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Kilo Shop-Concept</title>
-  <meta name="description"
-    content="Kilo Shop propose des vêtements vintage vendus au poids. Un concept écoresponsable pour chiner des pièces uniques à petits prix.">
-  <link rel="icon" type="image/png" href="images/icon-logo-kilo-shop.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kilo Shop-Concept</title>
+    <meta name="description"
+        content="Kilo Shop propose des vêtements vintage vendus au poids. Un concept écoresponsable pour chiner des pièces uniques à petits prix.">
+    <link rel="icon" type="image/png" href="images/icon-logo-kilo-shop.png" />
 </head>
 
 <body>
-  <header class="background-container">
-    <div class="background-image" id="bg"></div>
-    <div class="overlay-black" id="overlay"></div>
-  </header>
+    <header class="background-container">
+        <div class="background-image" id="bg"></div>
+        <div class="overlay-black" id="overlay"></div>
+    </header>
 
-
-  <section class="hero">
-    <img class="gif-kiloshop" src="images/gif-logo-Kilo-shop.gif" alt="Logo animé de Kilo Shop" />
-  </section>
-
-  <main class="main-content">
-    <div class="navbar">
-      <div class="navbar-left">
-        <img src="images/logo-kilo-shop-navbar.png" alt="Logo navbar" class="logo" />
-      </div>
-      <nav class="navbar-center">
-        <a href="#" data-i18n="navConcept">CONCEPT</a>
-        <a href="#" data-i18n="navMission">NOTRE MISSION</a>
-        <a href="#" data-i18n="navActus">ACTUS</a>
-        <a href="#" data-i18n="navShops">SHOPS</a>
-        <a href="#" data-i18n="navLooks">LOOKS</a>
-        <div class="menu-langue-deroulant" title="Choisir la langue">
-          <i class="fa-solid fa-globe" id="bouton-langue"></i>
-          <div class="liste-langues" id="liste-langues">
-            <a href="#" class="option-langue" data-lang="fr">Français</a>
-            <a href="#" class="option-langue" data-lang="en">English</a>
-          </div>
+    <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+            <button class="close-menu" id="close-menu">✕</button>
         </div>
-      </nav>
+        <nav class="mobile-menu-nav">
+            <a href="#" data-i18n="navConcept">CONCEPT</a>
+            <a href="#" data-i18n="navMission">NOTRE MISSION</a>
+            <a href="#" data-i18n="navActus">ACTUS</a>
+            <a href="#" data-i18n="navShops">SHOPS</a>
+            <a href="#" data-i18n="navLooks">LOOKS</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <i class="fa-solid fa-globe" id="mobile-globe"></i>
+        </div>
     </div>
 
-
-    <section id="concept">
-      <div class="block">
-        <div class="texte-block">
-          <h1 data-i18n="conceptTitle">Notre concept</h1>
-          <h2 data-i18n="conceptSubtitle">Achetez au kilo pas à la pièce !</h2>
-          <p data-i18n="conceptDescription">
-            Chez Kilo Shop, on fait les choses autrement. Ici, les vêtements <br />
-            de seconde main se vendent au kilo pas à la pièce. <br />
-            C'est simple : vous choisissez ce que vous aimez, on pèse, et hop, <br />
-            c'est le poids qui fait le prix.
-          </p>
-        </div>
-        <img class="mascotte-1" src="images/mascotte-kilo-shop-concept.png"
-          alt="Mascotte colorée de Kilo Shop faisant un signe peace" />
-      </div>
+    <section class="hero">
+        <img class="gif-kiloshop" src="images/gif-logo-Kilo-shop.gif" alt="Logo animé de Kilo Shop" />
     </section>
 
+    <main class="main-content">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="images/logo-kilo-shop-navbar.png" alt="Logo navbar" class="logo" />
+            </div>
 
-    <section id="fonctionnement">
-      <h3 data-i18n="fonctionnementTitle">COMMENT ÇA MARCHE ?</h3>
-      <section class="steps">
-        <article class="col col-1">
-          <p data-i18n="step1">Étape 1</p>
-          <div>
-            <img src="images/étape-1-choississez-kilo-shop.png" alt="Mascotte qui fait son shopping" />
-            <p class="choisissez" data-i18n="choose">CHOISISSEZ</p>
-          </div>
-        </article>
-        <article class="col col-2">
-          <p data-i18n="step2">Étape 2</p>
-          <div>
-            <img src="images/étape-2-pesez-kilo-shop.png" alt="Mascotte qui pèse ses articles" />
-            <p class="pesez" data-i18n="weigh">PESEZ</p>
-          </div>
-        </article>
-        <article class="col col-3">
-          <p data-i18n="step3">Étape 3</p>
-          <div>
-            <img src="images/étape-3-emportez-kilo-shop.png" alt="Mascotte avec des sacs" />
-            <p class="emportez" data-i18n="takeaway">EMPORTEZ</p>
-          </div>
-        </article>
-      </section>
-    </section>
+            <div class="menu-burger" id="menu-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
+            <nav class="navbar-center">
+                <a href="#" data-i18n="navConcept">CONCEPT</a>
+                <a href="#" data-i18n="navMission">NOTRE MISSION</a>
+                <a href="#" data-i18n="navActus">ACTUS</a>
+                <a href="#" data-i18n="navShops">SHOPS</a>
+                <a href="#" data-i18n="navLooks">LOOKS</a>
+            </nav>
 
-    <section id="pastille">
-      <h4 data-i18n="pastilleTitle">C'EST QUOI LE PRIX AU KILO ?</h4>
-      <div class="cards-container">
-        <div class="card">
-          <img src="images/affiche20-fr.JPG" alt="img1" class="img1" />
-          <img src="images/affiche30-fr.JPG" alt="img2" class="img2" />
-          <img src="images/affiche40-fr.JPG" alt="img3" class="img3" />
-          <img src="images/affiche60-fr.JPG" alt="img4" class="img4" />
+            <div class="menu-langue-deroulant" title="Choisir la langue">
+                <i class="fa-solid fa-globe" id="bouton-langue"></i>
+                <div class="liste-langues" id="liste-langues">
+                    <a href="#" class="option-langue" data-lang="fr">Français</a>
+                    <a href="#" class="option-langue" data-lang="en">English</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
 
 
-    <section>
-      <h5 data-i18n="brandsTitle">Et sinon à propos des marques ?</h5>
-      <div class="marquee">
-        <div class="marquee-inner">
-          <div class="marquee-content">
-            <img src="images/bershka.png" alt="Bershka" />
-            <img src="images/burberry.png" alt="Burberry" />
-            <img src="images/Carhartt.png" alt="Carhartt" />
-            <img src="images/columbia.png" alt="Columbia" />
-            <img src="images/converse.png" alt="Converse" />
-            <img src="images/dickies.png" alt="Dickies" />
-            <img src="images/guess.png" alt="Guess" />
-            <img src="images/kenzo.png" alt="Kenzo" />
-            <img src="images/levis.png" alt="Levis" />
-            <img src="images/Patagonia.png" alt="Patagonia" />
-            <img src="images/ralph laurent.png" alt="Ralph Lauren" />
-            <img src="images/supreme.png" alt="Supreme" />
-            <img src="images/Umbro.png" alt="Umbro" />
-          </div>
-          <div class="marquee-content">
-            <img src="images/alpha industrie.png" alt="Bershka" />
-            <img src="images/benetton.png" alt="Burberry" />
-            <img src="images/diesel.png" alt="Carhartt" />
-            <img src="images/gap.png" alt="Columbia" />
-            <img src="images/kappa.png" alt="Converse" />
-            <img src="images/lacoste.png" alt="Dickies" />
-            <img src="images/tommy2.png" alt="Guess" />
-            <img src="images/nike.png" alt="Kenzo" />
-            <img src="images/zara.png" alt="Levis" />
-            <img src="images/Banana Republic.png" alt="Patagonia" />
-            <img src="images/esprit.png" alt="Ralph Lauren" />
-            <img src="images/Pull&Bear.png" alt="Supreme" />
-            <img src="images/Jean Paul Gaultier.png" alt="Umbro" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section id="concept">
+            <div class="block">
+                <div class="texte-block">
+                    <h1 data-i18n="conceptTitle">Notre concept</h1>
+                    <h2 data-i18n="conceptSubtitle">Achetez au kilo pas à la pièce !</h2>
+                    <p data-i18n="conceptDescription">
+                        Chez Kilo Shop, on fait les choses autrement. Ici, les vêtements <br />
+                        de seconde main se vendent au kilo pas à la pièce. <br />
+                        C'est simple : vous choisissez ce que vous aimez, on pèse, et hop, <br />
+                        c'est le poids qui fait le prix.
+                    </p>
+                </div>
+                <img class="mascotte-1" src="images/mascotte-kilo-shop-concept.png"
+                    alt="Mascotte colorée de Kilo Shop faisant un signe peace" />
+            </div>
+        </section>
 
 
-  <footer>
-    <section class="newsletter">
-      <div class="content">
-        <div class="left-section">
-          <h6 data-i18n="newsletterTitle">L'ACTU À NE PAS RATER !</h6>
-          <p data-i18n="newsletterDescription">
-            Rejoignez notre newsletter pour une dose d'inspiration<br />et d'énergie positive.
-          </p>
-        </div>
-        <div class="right-section">
-          <input type="email" placeholder="Email" data-i18n-placeholder="emailPlaceholder" />
-          <button data-i18n="sendButton">Envoyer</button>
-        </div>
-      </div>
-      <hr class="separator" />
-      <div class="social-icons">
-        <a href="https://www.instagram.com/kiloshopfrance/?hl=fr" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/kiloshop/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://www.linkedin.com/company/kilo-shop/?originalSubdomain=fr" target="_blank"
-          rel="noopener noreferrer">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://www.tiktok.com/@kiloshopfrance?lang=fr" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-tiktok"></i>
-        </a>
-      </div>
-      <hr class="separator" />
-      <div class="footer-content">
-        <div class="footer-links">
-          <ul>
-            <li data-i18n="footerLegal">Mentions légales</li>
-            <li data-i18n="footerPolicy">Politique de protection de données</li>
-            <li data-i18n="footerCGV">Conditions générales de vente</li>
-          </ul>
-          <ul>
-            <li data-i18n="footerContact">Contact & faq</li>
-            <li data-i18n="footerJobs">Recrutement</li>
-            <li data-i18n="footerFranchise">Devenir Franchisé</li>
-          </ul>
-        </div>
-        <img src="images/mascotte-kilo-shop-footer.png" alt="Mascotte peace" class="mascotte-footer" />
-      </div>
-      <hr class="bottom-line" />
-      <div class="copyright">
-        <p>KILO SHOP - TOUS DROITS RÉSERVÉS 2025</p>
-      </div>
-    </section>
-  </footer>
-  <script src="script.js"></script>
+        <section id="fonctionnement">
+            <h3 data-i18n="fonctionnementTitle">COMMENT ÇA MARCHE ?</h3>
+            <section class="steps">
+                <article class="col col-1">
+                    <p data-i18n="step1">Étape 1</p>
+                    <div>
+                        <img src="images/étape-1-choississez-kilo-shop.png" alt="Mascotte qui fait son shopping" />
+                        <p class="choisissez" data-i18n="choose">CHOISISSEZ</p>
+                    </div>
+                </article>
+                <article class="col col-2">
+                    <p data-i18n="step2">Étape 2</p>
+                    <div>
+                        <img src="images/étape-2-pesez-kilo-shop.png" alt="Mascotte qui pèse ses articles" />
+                        <p class="pesez" data-i18n="weigh">PESEZ</p>
+                    </div>
+                </article>
+                <article class="col col-3">
+                    <p data-i18n="step3">Étape 3</p>
+                    <div>
+                        <img src="images/étape-3-emportez-kilo-shop.png" alt="Mascotte avec des sacs" />
+                        <p class="emportez" data-i18n="takeaway">EMPORTEZ</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+        <section id="pastille">
+            <h4 data-i18n="pastilleTitle">C'EST QUOI LE PRIX AU KILO ?</h4>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images/affiche20-fr.JPG" alt="img1" class="img1" />
+                    <img src="images/affiche30-fr.JPG" alt="img2" class="img2" />
+                    <img src="images/affiche40-fr.JPG" alt="img3" class="img3" />
+                    <img src="images/affiche60-fr.JPG" alt="img4" class="img4" />
+                </div>
+            </div>
+        </section>
+
+
+        <section id="marques">
+            <h5 data-i18n="brandsTitle">Et sinon à propos des marques ?</h5>
+            <div class="marquee">
+                <div class="marquee-inner">
+                    <div class="marquee-content">
+                        <img src="images/bershka.png" alt="Bershka" />
+                        <img src="images/burberry.png" alt="Burberry" />
+                        <img src="images/Carhartt.png" alt="Carhartt" />
+                        <img src="images/columbia.png" alt="Columbia" />
+                        <img src="images/converse.png" alt="Converse" />
+                        <img src="images/dickies.png" alt="Dickies" />
+                        <img src="images/guess.png" alt="Guess" />
+                        <img src="images/kenzo.png" alt="Kenzo" />
+                        <img src="images/levis.png" alt="Levis" />
+                        <img src="images/Patagonia.png" alt="Patagonia" />
+                        <img src="images/ralph laurent.png" alt="Ralph Lauren" />
+                        <img src="images/supreme.png" alt="Supreme" />
+                        <img src="images/Umbro.png" alt="Umbro" />
+                    </div>
+                    <div class="marquee-content">
+                        <img src="images/alpha industrie.png" alt="Bershka" />
+                        <img src="images/benetton.png" alt="Burberry" />
+                        <img src="images/diesel.png" alt="Carhartt" />
+                        <img src="images/gap.png" alt="Columbia" />
+                        <img src="images/kappa.png" alt="Converse" />
+                        <img src="images/lacoste.png" alt="Dickies" />
+                        <img src="images/tommy2.png" alt="Guess" />
+                        <img src="images/nike.png" alt="Kenzo" />
+                        <img src="images/zara.png" alt="Levis" />
+                        <img src="images/Banana Republic.png" alt="Patagonia" />
+                        <img src="images/esprit.png" alt="Ralph Lauren" />
+                        <img src="images/Pull&Bear.png" alt="Supreme" />
+                        <img src="images/Jean Paul Gaultier.png" alt="Umbro" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="newsletter">
+            <div class="content">
+                <div class="left-section">
+                    <h6 data-i18n="newsletterTitle">L'ACTU À NE PAS RATER !</h6>
+                    <p data-i18n="newsletterDescription">
+                        Rejoignez notre newsletter pour une dose d'inspiration<br /> et d'énergie positive.
+                    </p>
+                </div>
+                <div class="right-section">
+                    <input type="email" placeholder="Email" data-i18n-placeholder="emailPlaceholder" />
+                    <button data-i18n="sendButton">Envoyer</button>
+                </div>
+            </div>
+            <hr class="separator" />
+            <div class="social-icons">
+                <a href="https://www.instagram.com/kiloshopfrance/?hl=fr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/kiloshop/?locale=fr_FR" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/kilo-shop/?originalSubdomain=fr" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.tiktok.com/@kiloshopfrance?lang=fr" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            <hr class="separator" />
+            <div class="footer-content">
+                <div class="footer-links">
+                    <ul>
+                        <li data-i18n="footerLegal">Mentions légales</li>
+                        <li data-i18n="footerPolicy">Politique de protection de données</li>
+                        <li data-i18n="footerCGV">Conditions générales de vente</li>
+                    </ul>
+                    <ul>
+                        <li data-i18n="footerContact">Contact & faq</li>
+                        <li data-i18n="footerJobs">Recrutement</li>
+                        <li data-i18n="footerFranchise">Devenir Franchisé</li>
+                    </ul>
+                </div>
+                <img src="images/mascotte-kilo-shop-footer.png" alt="Mascotte peace" class="mascotte-footer" />
+            </div>
+            <hr class="bottom-line" />
+            <div class="copyright">
+                <p>KILO SHOP - TOUS DROITS RÉSERVÉS 2025</p>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
