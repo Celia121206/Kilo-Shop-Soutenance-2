@@ -1,4 +1,3 @@
-
 const logo = document.querySelector('.gif-kiloshop')
 let isHidden = false
 window.addEventListener('scroll', function () {
@@ -34,39 +33,72 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(img);
   });
 
-
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
   const carousel = document.querySelector('.affiche-reduite');
   let currentSlide = 0;
-  const totalSlides = carousel.children.length;
+  const totalSlides = carousel ? carousel.children.length : 0;
 
   function updateCarousel() {
-    const slideWidth = carousel.offsetWidth / totalSlides;
-    carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-    console.log('Current slide:', currentSlide);
+    if (carousel) {
+      const slideWidth = carousel.offsetWidth / totalSlides;
+      carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      console.log('Current slide:', currentSlide);
+    }
   }
 
-  nextBtn.addEventListener('click', () => {
-    if (currentSlide < 3) {
-      currentSlide++;
-    } else {
-      currentSlide = 0;
-    }
-    updateCarousel();
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < 3) {
+        currentSlide++;
+      } else {
+        currentSlide = 0;
+      }
+      updateCarousel();
+    });
+  }
 
-  prevBtn.addEventListener('click', () => {
-    console.log('Prev clicked, current:', currentSlide);
-    if (currentSlide > 0) {
-      currentSlide--;
-    } else {
-      currentSlide = 3;
-    }
-    updateCarousel();
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      console.log('Prev clicked, current:', currentSlide);
+      if (currentSlide > 0) {
+        currentSlide--;
+      } else {
+        currentSlide = 3;
+      }
+      updateCarousel();
+    });
+  }
 });
 
+
+const imageConfig = {
+  fr: {
+    img1: 'images/affiche20-fr.JPG',
+    img2: 'images/affiche30-fr.JPG',
+    img3: 'images/affiche40-fr.JPG',
+    img4: 'images/affiche60-fr.JPG'
+  },
+  en: {
+    img1: 'images/affiche20-en.png',
+    img2: 'images/affiche30-en.png',
+    img3: 'images/affiche40-en.png',
+    img4: 'images/affiche60-en.png'
+  }
+};
+
+
+function updateImages(lang) {
+  const img1 = document.querySelector('.img1');
+  const img2 = document.querySelector('.img2');
+  const img3 = document.querySelector('.img3');
+  const img4 = document.querySelector('.img4');
+
+  if (img1) img1.src = imageConfig[lang].img1;
+  if (img2) img2.src = imageConfig[lang].img2;
+  if (img3) img3.src = imageConfig[lang].img3;
+  if (img4) img4.src = imageConfig[lang].img4;
+}
 
 const translations = {
   en: {
@@ -105,7 +137,8 @@ const translations = {
     footerCGV: "Terms and Conditions",
     footerContact: "Contact & FAQ",
     footerJobs: "Recruitment",
-    footerFranchise: "Become a Franchisee"
+    footerFranchise: "Become a Franchisee",
+    copyright: "KILO SHOP - ALL RIGHTS RESERVED 2025"
   },
   fr: {
     navConcept: "CONCEPT",
@@ -143,14 +176,18 @@ const translations = {
     footerCGV: "Conditions générales de vente",
     footerContact: "Contact & faq",
     footerJobs: "Recrutement",
-    footerFranchise: "Devenir Franchisé"
+    footerFranchise: "Devenir Franchisé",
+    copyright: "KILO SHOP - TOUS DROITS RÉSERVÉS 2025"
   }
 };
+
 
 document.querySelectorAll('.option-langue').forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
     const lang = e.target.dataset.lang;
+
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (translations[lang][key]) {
@@ -161,11 +198,13 @@ document.querySelectorAll('.option-langue').forEach(el => {
         }
       }
     });
+
+
+    updateImages(lang);
   });
 });
 
 function createMobileMenu() {
-
   const mobileMenuOverlay = document.createElement('div');
   mobileMenuOverlay.className = 'mobile-menu-overlay';
   mobileMenuOverlay.id = 'mobile-menu-overlay';
@@ -189,13 +228,11 @@ function createMobileMenu() {
   document.body.appendChild(mobileMenuOverlay);
 }
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const menuBurger = document.getElementById('menu-burger');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
   const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
   const closeMenu = document.getElementById('close-menu');
-
 
   function openMenu() {
     mobileMenuOverlay.classList.add('active');
@@ -203,28 +240,23 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = 'hidden';
   }
 
-
   function closeMenuFunction() {
     mobileMenuOverlay.classList.remove('active');
     mobileMenuBackdrop.classList.remove('active');
     document.body.style.overflow = '';
   }
 
-
   if (menuBurger) {
     menuBurger.addEventListener('click', openMenu);
   }
-
 
   if (closeMenu) {
     closeMenu.addEventListener('click', closeMenuFunction);
   }
 
-
   if (mobileMenuBackdrop) {
     mobileMenuBackdrop.addEventListener('click', closeMenuFunction);
   }
-
 
   const mobileMenuLinks = document.querySelectorAll('.mobile-menu-nav a');
   mobileMenuLinks.forEach(link => {
@@ -233,13 +265,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && mobileMenuOverlay && mobileMenuOverlay.classList.contains('active')) {
       closeMenuFunction();
     }
   });
-
 
   const boutonLangue = document.getElementById('bouton-langue');
   const listeLangues = document.getElementById('liste-langues');

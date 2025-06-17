@@ -207,9 +207,17 @@ h6 {
 .img3:nth-child(3) {
   transform: translateY(-150px);
   margin-top: -80px;
-  height: 400px;
 }
 
+.card img {
+  opacity: 0;
+  transition: opacity 3s ease, transform 3s ease;
+  border-radius: 8px;
+  height: 400px;
+  /* Hauteur uniforme pour toutes les images */
+  object-fit: cover;
+  /* Pour garder les proportions */
+}
 
 .col {
   position: sticky;
@@ -266,6 +274,7 @@ h6 {
   font-size: 65px;
   margin-left: 90px;
   margin-top: 5px;
+  margin-bottom: 0; 
 }
 
 .left-section p {
@@ -273,6 +282,15 @@ h6 {
   margin-left: 90px;
   font-size: 25px;
   line-height: 1.5;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  font-size: 24px;
+  margin-left: 90px; 
+  line-height: 3;
+  font-family: Baloo2;
 }
 
 .block {
@@ -427,14 +445,7 @@ footer {
   gap: 150px;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  font-size: 24px;
-  margin-left: 90px;
-  line-height: 3;
-  font-family: Baloo2;
-}
+
 
 .footer-links ul li {
   cursor: pointer;
@@ -812,11 +823,22 @@ footer {
     margin-bottom: -100px;
   }
 
+
+  .img1 {
+    transform: none !important;
+    margin-top: 90 !important;
+  }
+
   .card img {
     width: 100%;
     max-width: 250px;
-    height: auto;
+    height: auto !important;
     transform: none !important;
+  }
+
+  .img3 {
+    transform: none !important;
+    margin-top: 0 !important;
   }
 
   .marquee {
@@ -854,14 +876,18 @@ footer {
 
   .left-section h6 {
     font-size: 32px;
-    margin-left: 30px;
+    margin-left: 30px !important; 
+    margin-right: 30px;
     text-align: left;
     line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
 
   .left-section p {
     font-size: 18px;
-    margin-left: 30px;
+    margin-left: 30px !important; 
+    margin-right: 30px;
     text-align: left;
     line-height: 1.4;
   }
@@ -873,7 +899,8 @@ footer {
   .right-section {
     width: 100%;
     align-items: flex-start;
-    margin-left: 30px;
+    margin-left: 30px !important; 
+    margin-right: 30px;
     margin-top: 0;
   }
 
@@ -920,7 +947,8 @@ footer {
     font-size: 16px;
     line-height: 2;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 30px !important; 
+    margin-right: 30px;
   }
 
   .mascotte-footer {
