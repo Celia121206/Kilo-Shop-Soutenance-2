@@ -248,11 +248,13 @@ h6 {
   max-height: 500px;
   margin: 15px 0px;
 }
+
 .col p:first-child {
   font-size: 46px;
   margin-bottom: 15px;
   text-align: center;
 }
+
 .step-action-weigh {
   text-align: center;
   font-size: 10px;
@@ -441,7 +443,7 @@ footer {
 .footer-links {
   display: flex;
   gap: 150px;
-  
+
 }
 
 

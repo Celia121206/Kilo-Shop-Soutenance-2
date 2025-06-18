@@ -5,8 +5,8 @@ window.addEventListener('scroll', function () {
   const scrollY = window.scrollY;
 
   if (scrollY < 300) {
-    const scale = 1 + scrollY / 1000; 
-    const opacity = 1 - scrollY / 300; 
+    const scale = 1 + scrollY / 1000;
+    const opacity = 1 - scrollY / 300;
     logo.style.transform = `scale(${scale})`;
     logo.style.opacity = opacity;
     logo.style.display = 'block';
@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const imageConfig = {
   fr: {
-    img1: 'images/affiche-20-euro-per-kilo-fr.png',    
-    img2: 'images/affiche-30-euro-per-kilo-fr.png',    
-    img3: 'images/affiche-40-euro-per-kilo-fr.png',    
-    img4: 'images/affiche-60-euro-per-kilo-fr.png'     
+    img1: 'images/affiche-20-euro-per-kilo-fr.png',
+    img2: 'images/affiche-30-euro-per-kilo-fr.png',
+    img3: 'images/affiche-40-euro-per-kilo-fr.png',
+    img4: 'images/affiche-60-euro-per-kilo-fr.png'
   },
   en: {
     img1: 'images/affiche-20-euro-per-kilo-en.png',
