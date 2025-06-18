@@ -1,25 +1,27 @@
-const logo = document.querySelector('.gif-kiloshop')
-let isHidden = false
+const logo = document.querySelector('.animated-logo');
+let isHidden = false;
+
 window.addEventListener('scroll', function () {
-  if (window.scrollY > 300 && !isHidden) {
-    logo.style.opacity = '0'
-    logo.style.transition = 'opacity 0.3s ease-in-out'
-    isHidden = true
+  const scrollY = window.scrollY;
+
+  if (scrollY < 300) {
+    const scale = 1 + scrollY / 1000; 
+    const opacity = 1 - scrollY / 300; 
+    logo.style.transform = `scale(${scale})`;
+    logo.style.opacity = opacity;
+    logo.style.display = 'block';
+    isHidden = false;
+  } else if (!isHidden) {
+    logo.style.opacity = '0';
     setTimeout(() => {
-      if (isHidden) logo.style.display = 'none'
-    }, 200)
-  } else if (window.scrollY <= 300 && isHidden) {
-    logo.style.display = 'block'
-    requestAnimationFrame(() => {
-      logo.style.opacity = '1'
-      logo.style.transition = 'opacity 0.2s ease-in-out'
-    })
-    isHidden = false
+      logo.style.display = 'none';
+    }, 300);
+    isHidden = true;
   }
-})
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".card img");
+  const images = document.querySelectorAll(".card-poster img");
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -74,16 +76,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const imageConfig = {
   fr: {
-    img1: 'images/affiche20-fr.JPG',
-    img2: 'images/affiche30-fr.JPG',
-    img3: 'images/affiche40-fr.JPG',
-    img4: 'images/affiche60-fr.JPG'
+    img1: 'images/affiche-20-euro-per-kilo-fr.png',    
+    img2: 'images/affiche-30-euro-per-kilo-fr.png',    
+    img3: 'images/affiche-40-euro-per-kilo-fr.png',    
+    img4: 'images/affiche-60-euro-per-kilo-fr.png'     
   },
   en: {
-    img1: 'images/affiche20-en.png',
-    img2: 'images/affiche30-en.png',
-    img3: 'images/affiche40-en.png',
-    img4: 'images/affiche60-en.png'
+    img1: 'images/affiche-20-euro-per-kilo-en.png',
+    img2: 'images/affiche-30-euro-per-kilo-en.png',
+    img3: 'images/affiche-40-euro-per-kilo-en.png',
+    img4: 'images/affiche-60-euro-per-kilo-en.png'
   }
 };
 
@@ -104,7 +106,7 @@ const translations = {
   en: {
     navConcept: "CONCEPT",
     navMission: "OUR MISSION",
-    navActus: "NEWS",
+    navNews: "NEWS",
     navShops: "SHOPS",
     navLooks: "LOOKS",
 
@@ -113,7 +115,7 @@ const translations = {
     conceptDescription:
       "At Kilo Shop, we do things differently. Here, second-hand clothes are sold by weight, not by the piece. It's simple: pick what you like, we weigh it, and boom, the price is based on the weight.",
 
-    fonctionnementTitle: "HOW DOES IT WORK?",
+    functioningTitle: "HOW DOES IT WORK?",
     step1: "Step 1",
     choose: "CHOOSE",
     step2: "Step 2",
@@ -121,7 +123,7 @@ const translations = {
     step3: "Step 3",
     takeaway: "TAKE AWAY",
 
-    pastilleTitle: "WHAT IS THE PRICE PER KILO?",
+    posterTitle: "WHAT IS THE PRICE PER KILO?",
 
     clothesTitle: "WHERE DO OUR CLOTHES COME FROM?",
 
@@ -143,7 +145,7 @@ const translations = {
   fr: {
     navConcept: "CONCEPT",
     navMission: "NOTRE MISSION",
-    navActus: "ACTUS",
+    navNews: "ACTUS",
     navShops: "SHOPS",
     navLooks: "LOOKS",
 
@@ -152,7 +154,7 @@ const translations = {
     conceptDescription:
       "Chez Kilo Shop, on fait les choses autrement. Ici, les vêtements de seconde main se vendent au kilo pas à la pièce. C'est simple : vous choisissez ce que vous aimez, on pèse, et hop, c'est le poids qui fait le prix.",
 
-    fonctionnementTitle: "COMMENT ÇA MARCHE ?",
+    functioningTitle: "COMMENT ÇA MARCHE ?",
     step1: "Étape 1",
     choose: "CHOISISSEZ",
     step2: "Étape 2",
@@ -160,7 +162,7 @@ const translations = {
     step3: "Étape 3",
     takeaway: "EMPORTEZ",
 
-    pastilleTitle: "C'EST QUOI LE PRIX AU KILO ?",
+    posterTitle: "C'EST QUOI LE PRIX AU KILO ?",
 
     clothesTitle: "MAIS D'OÚ VIENNENT NOS VÊTEMENTS ?",
 
@@ -271,8 +273,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  const boutonLangue = document.getElementById('bouton-langue');
-  const listeLangues = document.getElementById('liste-langues');
+  const boutonLangue = document.getElementById('language-button');
+  const listeLangues = document.getElementById('language-list');
 
   if (boutonLangue && listeLangues) {
     boutonLangue.addEventListener('click', function (e) {
